@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc{
+    display:inline;
+}
+
+body{
+    background-color:white;
+}
+.pqr{
+    color:#0274E5;
+    text-decoration:none;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.pqr:hover{
+    font-size: 30px;
+    color: darkblue;
+}
+
+#cha{
+    height:600px;
+    width:100%;
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/3/32/20190616154621%21Echo_Park_Lake_with_Downtown_Los_Angeles_Skyline.jpg");
+     animation-name: Demo;
+     animation-direction:alternate;
+     animation-duration: 15s;
+     animation-iteration-count: infinite;
+}
+@keyframes Demo{
+    0%{background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/32/20190616154621%21Echo_Park_Lake_with_Downtown_Los_Angeles_Skyline.jpg"); background-size: cover;}
+    25%{background-image: url("https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg");background-size: cover;}
+    50%{background-image: url("https://static01.nyt.com/images/2023/07/01/travel/22hours-paris-tjzf/22hours-paris-tjzf-superJumbo.jpg");background-size: cover;}
+    75%{background-image: url("https://imgix.theurbanlist.com/content/article/kid-friendly-accommodation-sydney.jpg?auto=format,compress&w=520&h=390&fit=crop");background-size: cover;}
+    100%{background-image: url("https://static.thehoneycombers.com/wp-content/uploads/sites/2/2019/09/12.png");background-size: cover;}
+    }
+    
+#container{
+    height: 300px;      
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.rrr{
+    height: 300px;
+    width: 400px;
+    text-align:center;
+}
+    </style>
+</head>
+<body>
+    <nav> 
+        <ul style="list-style-type:none;">
+            <li class="abc">
+                <a class="pqr" onclick="myHome()" href="index.html"> Home </a>
+            </li>
+            <li class="abc">
+                <a class="pqr" href="About.html">About</a>
+            </li>
+                    <li class="abc">
+                    <a class="pqr" href="rooms and rates.html"> Rooms and Rates </a>
+                        </li>
+                        <li class="abc">
+                            <a class="pqr" href="Activities.html"> Activities </a>
+                            </li>
+                            <li class="abc">
+                            <a class="pqr" href="Contact.html"> Contact </a>
+                                </li>
+                                
+            </ul>
+        </nav>
+        <div id="cha">
+            </div>
+            <h1 style="color:blue;"> Activities </h1>
+            <br/> <br/>
+                <br/> <br/>
+                <div id="container">
+                    <div class="rrr">
+                        <img src="https://th.bing.com/th/id/OIP.hQvvm-ne4JP4sP7-QsIhMwHaE8?pid=ImgDet&rs=1" height="200" width="400">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                    <div class="rrr">
+                        <img src="https://assets-global.website-files.com/5c6d6c45eaa55f57c6367749/63b136b7085eb012ef91d1fd_Blog%20Graphic%20-%20web%20-%20to%20do%20for%20guests.jpg" height="200" width="500">
+                        <h3></h3>
+                        <p>We offer daily biking tours around the city, which are complementary to your stay. </p>
+                    </div>
+                    <div class="rrr">
+                        <img src="https://www.hotelcontractbeds.co.uk/media/4683/relaxing-by-the-pool.jpg" height="200" width="400">
+                        <h3></h3>
+                        <p>We also provide spa hours for our guests to relax and enjoy after a day out.</p>
+                    </div>
+                    <div class="rrr">
+                        <img src="https://optimise2.assets-servd.host/colossal-caracara/staging/blog/kid-friendly-hotel-activities.jpg?w=2880&h=1440&auto=compress%2Cformat&fit=crop&dm=1683639504&s=061ab8bd21efa89570cc7e5854fbf4b1" height="200" width="400">
+                        <h3></h3>
+                        <p>As included, we have a large pool, and due to the fact that our hotel has a beach view, and is connected to the beach, that flows out to a small fragment of the ocean that has been surrounded by underwater nets, for our guests safety.</p>
+                    </div>
+                    <div class="rrr">
+                        <img src="https://www.fourseasons.com/alt/img-opt/~70.1530.0,0000-4,3957-3000,0000-1687,5000/publish/content/dam/fourseasons/images/web/BAL/BAL_1408_original.jpg" height="200" width="400">
+                        <h3></h3>
+                        <p>We have yoga classes, with a qualified instructor, who is also a chiropractor, for a session of relief on the bones and muscles, to get ready for a new and exciting day out.</p>
+                    </div>
+                    <div class="rrr">
+                        <img src="https://boardwalkbeachhotel.com/wp-content/themes/Boardwalk/images/slider/amenities_1.jpg" height="200" width="400">
+                        <h3></h3>
+                        <p>Extended onto the beach, a small portion is rented out by the hotel for sandy recreation, as well as boats, available for use with a qualified driver on board.</p>
+                    </div>
+                    </div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.abc{
+    display:inline;
+}
+
+body{
+    background-color:white;
+}
+.pqr{
+    color:#0274E5;
+    text-decoration:none;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.pqr:hover{
+    font-size: 30px;
+    color: darkblue;
+}
+
+#cha{
+    height:600px;
+    width:100%;
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/3/32/20190616154621%21Echo_Park_Lake_with_Downtown_Los_Angeles_Skyline.jpg");
+     animation-name: Demo;
+     animation-direction:alternate;
+     animation-duration: 15s;
+     animation-iteration-count: infinite;
+}
+@keyframes Demo{
+    0%{background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/32/20190616154621%21Echo_Park_Lake_with_Downtown_Los_Angeles_Skyline.jpg"); background-size: cover;}
+    25%{background-image: url("https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg");background-size: cover;}
+    50%{background-image: url("https://static01.nyt.com/images/2023/07/01/travel/22hours-paris-tjzf/22hours-paris-tjzf-superJumbo.jpg");background-size: cover;}
+    75%{background-image: url("https://imgix.theurbanlist.com/content/article/kid-friendly-accommodation-sydney.jpg?auto=format,compress&w=520&h=390&fit=crop");background-size: cover;}
+    100%{background-image: url("https://static.thehoneycombers.com/wp-content/uploads/sites/2/2019/09/12.png");background-size: cover;}
+    }
+    
+#container{
+    height: 300px;
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.rrr{
+    height: 300px;
+    width: 400px;
+    text-align:center;
+}
+        
+    </style>
+</head>
+<body>
+
+        <nav> 
+            <ul style="list-style-type:none;">
+                <li class="abc">
+                    <a class="pqr" onclick="myHome()" href="index.html"> Home </a>
+                </li>
+                <li class="abc">
+                    <a class="pqr" href="About.html">About</a>
+                </li>
+                        <li class="abc">
+                        <a class="pqr" href="rooms and rates.html"> Rooms and Rates </a>
+                            </li>
+                            <li class="abc">
+                                <a class="pqr" href="Activities.html"> Activities </a>
+                                </li>
+                                <li class="abc">
+                                <a class="pqr" href="Contact.html"> Contact </a>
+                                    </li>
+                                    
+                </ul>
+            </nav>
+            <div id="cha">
+                </div>
+                <br/> <br/>
+                <div style= "background-image:url('https://static.wixstatic.com/media/05e3dc_875e59fd2b77402297c54466ccee4b58.jpg/v1/fill/w_1919,h_620,al_c,q_85,enc_auto/05e3dc_875e59fd2b77402297c54466ccee4b58.jpg');background-size:cover;height: 400px; width:100%;">
+                    </div>
+                    <br/> <br/>
+                    <div id="container">
+                        <div class="rrr">
+                            <h2> Activities </h2>
+                            <p> Our hotel's offer many complimetary activities during your stay, depending on which branch you are in. The Sydney branch offer's yoga classes, spa hour, a free swimming pass, local tours, live music, movie theater, a gym, and an indoor karaoke. The local tours, spa hours, gym, movie theater and most of the other activities need a pass that can be purchased as extra at the lobby for ONLY $75. </p>
+                            <input type="button" value="Read more" style= "background-color:navy;color:white; height: 40px; width: 100px;">
+                        </div>
+                        <div class="rrr">
+                            <h2>Room's and Rate's</h2>
+                            <p> At our hotel, we offer various rooms with different prices (depending on your choice of room).There are: double bed rooms, single bed rooms, queen bed rooms, king bed rooms, our suite rooms, with an absolutely breath-taking view of the city, and the standard rooms. The double bed rooms, cost $250 per night (p/n), single bed rooms, $200 p/n, queen and king bed rooms $300 p/n, suite's at $400 p/n and the standard rooms, at $150 p/n (non inclusive of complimentary items, unless purchased at the lobby). </p>
+                            <input type="button" value="Read more" style= "background-color:navy;color:white; height: 40px; width: 100px;">
+                        </div>
+                        <div class="rrr">
+                            <h2>Location</h2>
+                            <p> Our hotel is set at an extremely scenic place, which provides an utmost, beautiful view of the city and the buildings, in Sydney. </p>
+                            <input type="button" value="Read more" style= "background-color:navy;color:white; height: 40px; width: 100px;">
+                        </div>
+                        </div>
+<div id="aboutpage" display:none>
+<div class="rrr">
+                            <p> Our hotel based in Sydney, has many branches across the world. We specialise in providing our customers with the utmost comfort and make sure they enjoy their stay with us. </p>
+                            <input type="button" value="Read more" style= "background-color:navy;color:white; height: 40px; width: 100px;">
+                        </div>
+                        <div class="rrr">
+                            <p> At our hotel, we have many policies to keep our customer's stay organised and comfortable.</p>
+                            <input type="button" value="Read more" style= "background-color:navy;color:white; height: 40px; width: 100px;">
+                        </div>
+                        <div class="rrr">
+                            <p> </p>
+                            <input type="button" value="Read more" style= "background-color:navy;color:white; height: 40px; width: 100px;">
+                        </div>
+
+</div>
+
+<script>
+function myHome() {
+  var x = document.getElementById("container");
+   x.style.display = "block";
+  var y = document.getElementById("aboutpage");
+  y.style.display = "none";
+  }
+
+
+function myAbout() {
+  var x = document.getElementById("container");
+   x.style.display = "none";
+  var y = document.getElementById("aboutpage");
+  y.style.display = "block";
+  }
+
+
+</script>
+
+</body>
+</html>

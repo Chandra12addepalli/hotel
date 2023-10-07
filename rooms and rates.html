@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc{
+    display:inline;
+}
+
+body{
+    background-color:white;
+}
+.pqr{
+    color:#0274E5;
+    text-decoration:none;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.pqr:hover{
+    font-size: 30px;
+    color: darkblue;
+}
+
+#cha{
+    height:600px;
+    width:100%;
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/3/32/20190616154621%21Echo_Park_Lake_with_Downtown_Los_Angeles_Skyline.jpg");
+     animation-name: Demo;
+     animation-direction:alternate;
+     animation-duration: 15s;
+     animation-iteration-count: infinite;
+}
+@keyframes Demo{
+    0%{background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/32/20190616154621%21Echo_Park_Lake_with_Downtown_Los_Angeles_Skyline.jpg"); background-size: cover;}
+    25%{background-image: url("https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg");background-size: cover;}
+    50%{background-image: url("https://static01.nyt.com/images/2023/07/01/travel/22hours-paris-tjzf/22hours-paris-tjzf-superJumbo.jpg");background-size: cover;}
+    75%{background-image: url("https://imgix.theurbanlist.com/content/article/kid-friendly-accommodation-sydney.jpg?auto=format,compress&w=520&h=390&fit=crop");background-size: cover;}
+    100%{background-image: url("https://static.thehoneycombers.com/wp-content/uploads/sites/2/2019/09/12.png");background-size: cover;}
+    }
+    
+#container{
+    height: 300px;      
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.rrr{
+    height: 300px;
+    width: 400px;
+    text-align:center;
+}
+
+#Flexbox_123{
+    height: 300px;
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.qqq{
+    height: 300px;
+    width: 400px;
+    text-align:center;
+}
+    </style>
+</head>
+<body>
+        <nav> 
+            <ul style="list-style-type:none;">
+                <li class="abc">
+                    <a class="pqr" onclick="myHome()" href="index.html"> Home </a>
+                </li>
+                <li class="abc">
+                    <a class="pqr" href="About.html">About</a>
+                </li>
+                        <li class="abc">
+                        <a class="pqr" href="rooms and rates.html"> Rooms and Rates </a>
+                            </li>
+                            <li class="abc">
+                                <a class="pqr" href="Activities.html"> Activities </a>
+                                </li>
+                                <li class="abc">
+                                <a class="pqr" href="Contact.html"> Contact </a>
+                                    </li>
+                                    
+                </ul>
+            </nav>
+            <div id="cha">
+                </div>
+                <br/> <br/>
+                    <br/> <br/>
+                     <div id="container">
+                        <div class="rrr">
+                            <img src="https://static.wixstatic.com/media/fde015_6c05c2f649564c37a7b5acfd3a848e5b.jpg/v1/fill/w_240,h_170,q_85,usm_0.66_1.00_0.01/fde015_6c05c2f649564c37a7b5acfd3a848e5b.jpg" height="300" width="400">
+                        </div>
+                        <div class="rrr">
+                            <h2>Junior Suite</h2> 
+                            <p style="text-align:center"> Our Junior Suites offer breathtaking views of the city skyline. </p>
+                            <ul>
+                                <li> Size:260sq ft </li>
+                                <li> Beds: 2 Double(s) </li>
+                                </ul>
+                        </div>
+                        <div class="rrr">
+                            <h2 style="color:green;">Price</h2>
+                            <h1><i> From $250 </i></h1>
+                            <input type="button" value="More info" style= "background-color:navy;color:white; height: 40px; width: 100px;">
+                        </div>
+                     </div>
+                     <br/>
+                        <div id="Flexbox_123">
+                        <div class="qqq">
+                            <img src="https://static.wixstatic.com/media/fde015_597c7d9710e44a9d91514e0ac84fb653.jpg/v1/fill/w_240,h_170,q_85,usm_0.66_1.00_0.01/fde015_597c7d9710e44a9d91514e0ac84fb653.jpg" height="300" width="400">
+                        </div>
+                        <div class="qqq">
+                            <h2> Standard Room </h2> 
+                            <p style="text-align:center"> Our Standard Rooms are the perfect </br> combination of function and comfort. </p>
+                            <ul>
+                                <li> Size: 230 sq ft </li>
+                                <li> Beds: 1 Double(s) </li>
+                                </ul>
+                        </div>
+                        <div class="qqq">
+                            <h2 style="color:green;">Price</h2>
+                            <h1><i> From $150 </i></h1>
+                            <input type="button" value="More info" style= "background-color:navy;color:white; height: 40px; width: 100px;">
+                        </div>
+                    </div>
+</body>
+</html>
